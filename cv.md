@@ -20,8 +20,8 @@
 ##  *Code examples*
 * [Github](https://github.com/shuliakleonid/rsschool-cv)
 ## *Experience* ##
- + [Responsive web page layout]()
- +  [Other examples]()
++ [Responsive web page layout]()
++  [Other examples]()
 ## *Education* ##
 * On-line “rss-school”. I also study web development from books or other courses and study English at home.
 ## *Languages* ##
