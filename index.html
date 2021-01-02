@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+
+<div class="reveal">
+	<div class="slides">
+
+		<section><img src="./img/typescript.png" alt="typescript"></section>
+		<section>
+			<section id="fragments">
+				<h2>What is TypeScript?</h2>
+				<p class="fragment">Typescript is a typed superset of JavaScript</p>
+				<p class="fragment">Typescript was created by Microsoft in 2012</p>
+				<p class="fragment">Typescript must aid Javascript developers with large-scale applications</p>
+				<p class="fragment">Typescript help as a structuring mechanism for large codebases</p>
+				<p class="fragment">Typescript makes easier for teams how works on the same project</p>
+			</section>
+		</section>
+		<section>
+			<section id="fragments">
+				<h2><img style="width:300px" src="./img/TS_vs_JS.png" alt="typescript vs javascript"></h2>
+				<p class="fragment">
+					<span style="font-size: 26px" class="fragment fade-right highlight-blue">TypesScript is an Object oriented programming language  /</span>
+					<span style="font-size: 22px"
+					      class="fragment fade-Left highlight-red">JavaScript is a scripting language </span>
+				</p>
+				<p class="fragment">
+					<span style="font-size: 26px" class="fragment fade-right highlight-blue">TypeScript has static
+					typing
+					/</span>
+					<span style="font-size: 22px" class="fragment fade-Left highlight-red">JavaScript does not </span>
+				</p>
+				<p class="fragment">
+					<span style="font-size: 26px" class="fragment fade-right highlight-blue">TypeScript uses types and
+					interfaces to describe how data is being used / </span>
+					<span style="font-size: 22px" class="fragment fade-Left highlight-red"> JavaScript does not </span>
+				</p>
+				<p class="fragment">
+					<span style="font-size: 26px" class="fragment fade-right highlight-blue">TypeScript has interfaces
+					which are a powerful way to define contracts within your code /</span>
+					<span style="font-size: 22px" class="fragment fade-Left highlight-red">JavaScript does not </span>
+				</p>
+				<p class="fragment">
+					<span style="font-size: 26px" class="fragment fade-right highlight-blue">TypeScript supports
+					optional
+					parameters for /</span>
+					<span style="font-size: 22px" class="fragment fade-Left highlight-red">JavaScript does not </span>
+				</p>
+			</section>
+		</section>
+
+		<section id="fragments">
+			<section>
+				<h2> Why should you use Typescript?</h2>
+				<p class="fragment">Transpiling allows you to generate ECMAScript</p>
+				<p class="fragment">Typescript supports JS libraries and API documentation</p>
+				<p class="fragment">Typescript introduces static typing </p>
+				<p class="fragment">Typescript uses NPM</p>
+				<p class="fragment">Typescript is easier to maintain</p>
+				<p class="fragment">Typescript makes it easier to use React, Angular, and Vue</p>
+			</section>
+		</section>
+
+		<section>
+			<h2>How to start?</h2>
+			<section id="fragments">
+				<h2>Install TypeScript</h2>
+				<p class="fragment">TS Visual Studio Plugin</p>
+				<p class="fragment"> using NPM (Node Package Manager)</p>
+
+				<pre class="fragment" data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					npm install -g typescript
+					</code></pre>
+
+			</section>
+		</section>
+
+		<section id="fragments">
+			<section>
+				<h2>TypeScript Compilers</h2>
+				<pre class="fragment" data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					tsc filename.ts
+					</code></pre>
+				<p class="fragment">This will create a JS file</p>
+				<pre class="fragment" data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					filename.js
+					</code></pre>
+			</section>
+		</section>
+
+		<section id="fragments">
+			<section>
+				<h2>Types in Typescript</h2>
+
+				<p class="fragment">Any</p>
+				<p class="fragment">Built-in</p>
+				<p class="fragment">User-defined</p>
+
+			</section>
+		</section>
+
+		<section id="fragments">
+			<section>
+				<h2>Any</h2>
+				<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                let notSure: any = 4;
+                notSure = "maybe a string instead";
+                notSure = false; // okay, definitely a boolean
+					</code></pre>
+			</section>
+		</section>
+
+		<section><h1>Built-in</h1></section>
+		<section>
+			<h2>Number</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                let num: number = 0.444;
+                let hex: number = 0xbeef;
+                let bin: number = 0b0010;
+            </code></pre>
+		</section>
+		<section>
+			<h2>String</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                let w = "Value1";
+                let x = "this is a string with the value " + w;
+                let y = 'this is a string with the value ' + w;
+                let z = `this is a string ${w}`;
+                console.log(w,x,y,z)
+            </code></pre>
+		</section>
+
+		<section>
+			<h2>Boolean</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                let yes: boolean = true;
+                let no: boolean = false;
+            </code></pre>
+		</section>
+		<section>
+			<h2>Undefined</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                const treasure: undefined = undefined;
+            </code></pre>
+		</section>
+		<section>
+			<h2>Null</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                const fairElections: null = null;
+            </code></pre>
+		</section>
+		<section>
+			<h2>Void</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                function warnUser(): void {
+                console.log("This is my warning message");
+                }
+            </code></pre>
+		</section>
+
+		<section><h1>User-defined</h1></section>
+
+		<section>
+			<h2>Enum</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                    enum Color {Red, Green, Blue}
+                    // Red = 0, Green = 1, Blue = 2
+                    let c: Color = Color.Green;
+                    console.log(c)
+                    // output: 1
+            </code></pre>
+		</section>
+
+		<section>
+			<h2>Array</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                    let list: Array< number > = [1, 2, 3];
+                    // valid re-assignment
+                    list = [5, 6, 7];
+                    // invalid
+                    // list = ["hi", "hello"];
+            </code></pre>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                   let list: number[] = [5, 6, 7] ;
+            </code></pre>
+		</section>
+
+		<section>
+			<h2>Tuple</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                // Declare a tuple type
+                let x: [string, number];
+                // Initialize it
+                x = ["hello", 10]; // OK
+                // Initialize it incorrectly
+                x = [10, "hello"]; // Error
+            </code></pre>
+		</section>
+
+		<section>
+			<h2>Classes</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                class Person{
+                    firstName = "";
+                    lastName = "";
+                    constructor(firstName: string, lastName: string){
+                        this.firstName = firstName;
+                        this.lastName = lastName;
+                    }
+                    fullName(){
+                        return `${this.firstName} ${this.lastName}`
+                    }
+                }
+                let p = new Person("John", "Snow");
+                console.log("Name: ", p.fullName());
+                // output: Name:  John Snow
+            </code></pre>
+		</section>
+
+		<section>
+			<h2>Interfaces</h2>
+			<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+                // class using an interface
+                interface ClockInterface {
+	                currentTime: Date;
+	                setTime(d: Date): void;
+                }
+                class Clock implements ClockInterface {
+	                currentTime: Date = new Date();
+	                setTime(d: Date) {
+	                  this.currentTime = d;
+	                }
+	                constructor(h: number, m: number) { }
+	              }
+	              // function using an interface
+	              interface LabeledValue {
+	                label: string;
+	              }
+
+	              function printLabel(labeledObj: LabeledValue) {
+	                  console.log(labeledObj.label);
+	              }
+
+	              let myObj = {size: 10, label: "Size 10 Object"};
+	              printLabel(myObj);
+            </code></pre>
+		</section>
+		<section><h1>Thank you for watching!</h1></section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
+</html>
